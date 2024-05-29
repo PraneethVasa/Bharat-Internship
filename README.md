@@ -1,5 +1,5 @@
-**TASK 1 - REGISTRATION FORM**
-**I. Folder Structure**
+## **TASK 1 - REGISTRATION FORM**
+## **I. Folder Structure**
      ```
         registration-form/
         │
@@ -16,7 +16,7 @@
         │
         └── index.js
       ```
-**II. Install dependencies**
+## **II. Install dependencies**
         ``` npm install express mongoose body-parser bcryptjs
         ```
 **III. Start the Server**
