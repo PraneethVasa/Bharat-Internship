@@ -1,5 +1,5 @@
-## **TASK 1 - REGISTRATION FORM**
-### **I. Folder Structure**
+## TASK 1 - REGISTRATION FORM
+### I. Folder Structure
      
         registration-form/
         │
@@ -16,11 +16,11 @@
         │
         └── index.js
       
-### **II. Install Dependencies**
+### II. Install Dependencies
          npm install express mongoose body-parser bcryptjs
      
-### **III. Start the Server**
-        Go to the project directory then run the following command
+### III. Start the Server
+        *Go to the project directory then run the following command
           node index.js
 
 Open your web browser and go to http://localhost:3000.
