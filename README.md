@@ -21,9 +21,7 @@
      
 ### III. Start the Server
      Go to the project directory then run the following command
-          ``` 
                node index.js
-          ```
 
 Open your web browser and go to http://localhost:3000.
 
