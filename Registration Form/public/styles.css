@@ -1,0 +1,140 @@
+/* Variables */
+:root {
+    --primary-bg: hsl(213deg 85% 97%);
+    --secondary-bg: hsl(233deg 36% 38%);
+    --primary-font: 'Poppins', sans-serif;
+    --input-bg: hsl(0deg 0% 100%);
+    --input-shadow: hsl(231deg 62% 94%);
+    --text-color: hsl(0deg 0% 30%);
+    --placeholder-color: hsl(0deg 0% 0%);
+    --button-bg: hsl(233deg 36% 38%);
+    --button-color: hsl(0 0 100%);
+    --body-bg: hsl(218deg 50% 91%);
+    --box-shadow: 0 0 2em hsl(231deg 62% 94%);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+body {
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-bg);
+    height: 100vh;
+}
+
+/* Main Container */
+.screen-1 {
+    background: var(--primary-bg);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--secondary-bg);
+    margin-bottom: 1em;
+}
+
+.input-group {
+    background: var(--input-bg);
+    box-shadow: var(--box-shadow);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: var(--text-color);
+    width: 100%;
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 0.9em;
+}
+
+button.login {
+    padding: 1em;
+    background: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/* Success Message */
+#successMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary-bg);
+    margin-top: 1em;
+    display: none; /* Hide success message initially */
+}
+
+.hidden {
+    display: none;
+}
+
+.form-hidden {
+    display: none; /* Hide form after successful registration */
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    margin: 1em 0;
+}
+
+.checkmark__circle {
+    stroke: var(--secondary-bg);
+    stroke-width: 2;
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-miterlimit: 10;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke: var(--secondary-bg);
+    stroke-width: 2;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.3s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
