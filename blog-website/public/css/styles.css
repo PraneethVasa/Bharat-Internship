@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #008cba;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #008cba;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Article Styles */
+article {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #008cba;
+}
+
+article a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="file"] {
+    margin-bottom: 1rem;
+}
+
+form button {
+    padding: 1rem 2rem;
+    background: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #005f5f;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
